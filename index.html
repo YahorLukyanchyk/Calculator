@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/stylesheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calc__container">
+        <div class="calc__upper-block">
+          <form class="calc__output-form">
+            <input
+              id="calc__outout-window"
+              type="text"
+              class="calc__output"
+              placeholder="Output..."
+              readonly
+            />
+          </form>
+        </div>
+        <div class="calc__lower-block">
+          <div class="calc__btn-numbers">
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="0">0</button>
+            <button id="dot">.</button>
+          </div>
+          <div class="calc__btn-actions">
+            <button id="equal">=</button>
+            <button id="clear">C</button>
+            <button id="sad">(</button>
+            <button id="smile">)</button>
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+            <button id="mult">*</button>
+            <button id="divide">/</button>
+            <button id="remove">&#60--</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/showOutputData.js"></script>
+  </body>
+</html>

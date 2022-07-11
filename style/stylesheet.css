@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+@font-face {
+    font-family: "Digital-7";
+    src: url(/fonts/digital-7.woff);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc__container {
+  width: 210px;
+  height: 315px;
+  border: 5px groove rgb(173, 175, 175);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(202, 206, 205);
+}
+
+.calc__output-form {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calc__outout-window {
+  width: 190px;
+  height: 50px;
+}
+
+.calc__upper-block {
+  height: 110px;
+}
+
+.calc__lower-block {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.calc__btn-numbers {
+  padding: 5px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.calc__btn-numbers > button:nth-child(10) {
+  grid-column: span 2;
+}
+
+.calc__btn-actions {
+  padding: 5px 10px 5px 5px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 50% 50%;
+  gap: 5px;
+}
+
+button {
+  color: white;
+  background-color: rgb(36, 35, 35);
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.calc__btn-actions button {
+  background-color: rgb(41, 64, 65);
+}
+
+.calc__upper-block input {
+  font-family: "Digital-7", sans-serif;
+  font-size: 30px;
+  background-color: rgb(164, 175, 150);
+}
+
+#remove {
+  grid-column: span 2;
+  background-color: brown;
+}
+
+#equal,
+#clear {
+  background-color: rgb(24, 68, 85);
+}
